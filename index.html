@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find numbers</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet"></head>
+ --><body>
+	<div class = "container">
+		<div class ="intro" id = "intro">
+			<h1> HOW TO PLAY</h1>
+			<p> Starting from 1, click the numbers in increasing order. Test your memory!</p>
+				<p>You have 30 seconds. Click "Start" button to begin.</p>
+			
+			<div class = "btn">
+				<button  id = "btn"> Start</button>
+			</div>
+		</div>
+		<div class = "board" id = "board">
+			<div id = "scoreB">
+				<h4>Score: <span id="live-score"></span> /100</h4>
+			</div>
+			<div id = "timerB">
+				<h4>Timer: <span id="time"></span></h4>
+			</div>
+
+			<div id= "tbl">
+				<table>
+					
+				</table>
+
+			</div>
+			<div class = "result" id = "result">
+				<h1 id ="over"> GAME OVER </h1>
+				<h1>You scored: <span id ="score"></span> <br>
+				You are awsome!
+				</h1>
+				<button id = "back">Play again</button>
+			</div>
+		</div>
+		
+		
+	</div>
+	<script src ="script.js"></script>
+	<script> 
+			var beep = new Audio();
+				beep.src = "click.mp3";
+	</script>
+</body>
+</html>

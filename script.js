@@ -1,6 +1,6 @@
 
 console.log("hello");
-
+//create random array of numbers
 var num =[];
 for (let i = 1; i < 101; i ++){
 	num.push(i);
@@ -42,21 +42,26 @@ generateTable(table,randomNum);
 //set timer
 
 //click button for timer to start
+
 let button = document.querySelector("#btn");
-button.addEventListener("click", function(){
+
+button.addEventListener("click", letPlay);
+function letPlay (){
 	beep.play();
+	music.play();//play click sound
 	document.getElementById("intro").style.display = "none";
 	document.getElementById("board").style.display = "block";
 	let counter = 0;
 	let startTimer = setInterval(start,1000);
-	let stop = function(){
+	let stopIt = function(){
+		music.stop();
 		clearInterval(startTimer);
 		document.querySelector("#result").style.visibility = "visible";
 	}
 	function start () {
 		counter +=1;
-		if(counter> 59){
-			stop();
+		if(counter> 30){
+			stopIt();
 		}
 		document.querySelector("#time").innerHTML = counter;
 	};
@@ -69,29 +74,43 @@ button.addEventListener("click", function(){
 			clickedNum.push(m);
 			let n = event.target;
 				n.style.display = "none";
+			document.querySelector("#live-score").innerHTML =clickedNum.length ;
+			
+			console.log(clickedNum.length);
+			document.querySelector("#score").innerHTML = clickedNum.length ;
+			 
 
-			document.querySelector("#live-score").innerHTML =clickedNum.length;
-			document.querySelector("#score").innerHTML =clickedNum.length;
-			console.log(clickedNum);
 
-
-			for (let i =0; i < clickedNum.length; i++){
+			for (let i =1; i < clickedNum.length; i++){
 				if (clickedNum[i] != num[i]) {
-					stop();
-					// // document.querySelector("#live-score").innerHTML =clickedNum.length;
-					// console.log(clickedNum);
+					document.querySelector("#live-score").innerHTML =clickedNum.length-1 ;
+					document.querySelector("#score").innerHTML = clickedNum.length -1;
+					stopIt();
+					
 				}
 			}	
 			
 		});
 	}
 	
-}) ;
-
-document.getElementById("back").addEventListener("click", location.reload());
+};
 
 
+function playAgain (){
+	document.querySelector("#result").style.visibility = "hidden";
+	table.innerHTML= "";
+	clickedNum =[];
+	document.querySelector("#live-score").innerHTML= "",
+	document.querySelector("#score").innerHTML = "" ;
+	generateTable(table,randomNum);
+	letPlay();
 
+}
+HTMLAudioElement.prototype.stop = function()
+{
+this.pause();
+this.currentTime = 0.0;
+}
 
 
 

@@ -31,12 +31,13 @@
 				</table>
 
 			</div>
+			
 			<div class = "result" id = "result">
 				<h1 id ="over"> GAME OVER </h1>
 				<h1>You scored: <span id ="score"></span> <br>
 				You are awsome!
 				</h1>
-				<button id = "back">Play again</button>
+				<button id ="back" type ="submit" onclick="playAgain()"> Play again</button>
 			</div>
 		</div>
 		
@@ -46,6 +47,8 @@
 	<script> 
 			var beep = new Audio();
 				beep.src = "click.mp3";
+			var music = new Audio();
+				music.src = "Untitled.mov";
 	</script>
 </body>
 </html>

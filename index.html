@@ -3,23 +3,39 @@
 <head>
 	<meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Find numbers</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-<!-- 	<link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet"></head>
- --><body>
+	<link rel="stylesheet" href="style1.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Basic|El+Messiri|Jura|Literata&display=swap" rel="stylesheet">
+
+
+<body>
 	<div class = "container">
 		<div class ="intro" id = "intro">
-			<h1> HOW TO PLAY</h1>
-			<p> Starting from 1, click the numbers in increasing order. Test your memory!</p>
-				<p>You have 30 seconds. Click "Start" button to begin.</p>
-			
-			<div class = "btn">
-				<button  id = "btn"> Start</button>
+			<div id="rules">
+				<h1> HOW TO PLAY</h1>
+				<p class = "p1"> Starting from 1, click the numbers in increasing order. Test your memory!</p>
+					<p class ="p2"> Click "Start" button to begin.</p>
+				
+				<div class = "btn">
+					<button  id = "btn"> Start</button>
+				</div>
+			</div>
+
+			<div id ="level">
+				<p id= "cL">Choose level</p>
+				<div class ="buttonLevel">
+					<div><button class = "btnL" id ="level1" spacing = "45"level="4">Level 1</button></div>
+					<div><button class = "btnL" id= "level2" spacing = "35" level="5">Level 2</button></div>
+					<div><button class = "btnL" id= "level3"spacing = "20"level="6">Level 3</button></div>
+					<div><button class = "btnL" id= "level4" spacing = "10"level="7">Level 4</button></div>
+					<div><button class = "btnL" id= "level5"spacing = "0"level="8">Level 5</button></div>
+				</div>
 			</div>
 		</div>
 		<div class = "board" id = "board">
 			<div id = "scoreB">
-				<h4>Score: <span id="live-score"></span> /100</h4>
+				<h4>Score: <span class ="live-score"></span>/ <span class ="total"></span></h4>
 			</div>
 			<div id = "timerB">
 				<h4>Timer: <span id="time"></span></h4>
@@ -34,7 +50,7 @@
 			
 			<div class = "result" id = "result">
 				<h1 id ="over"> GAME OVER </h1>
-				<h1>You scored: <span id ="score"></span> <br>
+				<h1>You scored: <span id ="score"></span>/<span id ="total1"></span> <br>
 				You are awsome!
 				</h1>
 				<button id ="back" type ="submit" onclick="playAgain()"> Play again</button>
@@ -42,8 +58,9 @@
 		</div>
 		
 		
+		
 	</div>
-	<script src ="script.js"></script>
+	<script src ="test3.js"></script>
 	<script> 
 			var beep = new Audio();
 				beep.src = "click.mp3";

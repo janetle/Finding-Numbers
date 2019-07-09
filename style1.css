@@ -1,0 +1,263 @@
+@media (min-width: 600px){
+
+.container {
+/*	background-image: url("https://cdn.pixabay.com/photo/2015/08/30/07/25/vintage-913889_1280.jpg");
+*/	box-sizing: border-box;
+	margin: 50px auto;
+	
+	}
+	.intro {
+  	padding : 1em;
+    width: 70%;
+    height: 400px;
+	}
+	table ,tr{
+	margin: 0 auto;
+	width:100%;
+	font-size: 2rem;
+}
+}
+/*body {
+	background-image: url("https://image.freepik.com/free-photo/3d-network-background-with-connecting-lines-dots_1048-9850.jpg");
+
+
+}*/
+
+.container {
+/*	background-image: url("https://cdn.pixabay.com/photo/2018/03/07/07/55/abstract-3205415_1280.jpg");
+*/	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	margin-top: 20px;
+	
+	}
+
+.intro {
+	/*display:none;*/
+	padding : 1em;
+	max-width: 700px;
+	min-width: 400px;
+	min-height: 400px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: none;
+	margin: 0 auto;
+	background-color: #DDC3D0;
+	/*	background-image: linear-gradient(to bottom, #1dbb23fa, #4caf50c9);
+*/
+	box-shadow: 1px 1px 1px #DBDAEA, inset 2px 3px 5px #9492ac, inset -2px -3px 5px #282461;
+	}
+	#rules {
+		float:left;
+		width: 62%;
+		padding: 10px;
+		margin:10px;
+	}
+	#level {
+		margin-top: 20px;
+		float:right;
+		width: 30%;
+
+		/*padding: 10px;
+		margin:10px;*/
+	}
+	.buttonLevel{
+		margin-left: 20px;
+	}
+    
+#btn {
+	width: 120px;
+	font-size: 1.6rem;
+	line-height: 2;
+	border-radius: 10px;
+	border: none;
+	color: #336699;
+	margin-left: 30%;
+	margin-top: 15px;
+	background-image: linear-gradient(to top, #DBFCFF, #DBFCFF);
+	box-shadow: 1px 1px 1px #bcbae1, inset 2px 3px 5px #7c78ba, inset -2px -3px 5px #305274;
+}
+.btnL{
+	width: 120px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	border-radius: 10px;
+	border: none;
+	color: #685029;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+#level1{
+	background-image: linear-gradient(to top,#DBFCFF, #DBFCFF);
+}
+#level2{
+	background-image: linear-gradient(to top,#81D2C7, #81D2C7);
+}
+#level3{
+	background-image: linear-gradient(to top, #E0E0E2, #E0E0E2);
+}
+#level4{
+	background-image: linear-gradient(to top, #96ADC8, #96ADC8);
+}
+#level5{
+	background-image: linear-gradient(to top, #CEEAF7, #CEEAF7);
+}
+#cL {
+	margin-left: 2%;
+	color: #5A716A;
+}
+h1 {
+	font-family: 'Lilita One', cursive;
+	text-align: center;
+	/* text-shadow: 4px 4px 5px #008000a1; */
+	color: #5A716A;
+}
+h4 {
+	padding:0px;
+	margin: 2px;
+}
+p {
+	padding: 5px 8px 5px 8px;
+	/* text-shadow: 1px 1px 5px #008000a1; */
+	color: #336699;
+	text-align: justify;
+	font-size: 22px;
+	margin:20px;
+
+}
+.p1 {
+	font-family: 'El Messiri', sans-serif;
+}
+.p2 {
+	font-family: 'Basic', sans-serif;
+}
+.board  {
+	/*top: 50px;*/
+	display: none;
+	position: relative;
+	padding : 1em;
+	max-width: 620px;
+	height: 550px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius:-30px;
+	/*border: none;*/
+	margin: 0 auto;
+	/*background-color: green;*/
+
+	background-image: url("https://image.freepik.com/free-photo/3d-network-background-with-connecting-lines-dots_1048-9850.jpg");
+	background-size: contain;
+	box-shadow: 1px 1px 1px #B3E5FC, ,
+	            inset 5px 5px 8px #acd6e6,
+	            inset -4px -3px 5px #B3E5FC, ;
+}
+
+.result {
+	/*display:none;*/
+	visibility: hidden;
+	position: absolute;;
+	background-color: #c8e6c9d6;
+	top: 100px;
+	left:0;
+	max-width: 600px;
+	width: 100%;
+	min-height: 400px;
+	box-sizing: border-box;
+}
+#over {
+	font-size: 60px;
+}
+#scoreB {
+	width: 38%;
+	float:left;
+	height: 20px;
+	/*padding: 20x;*/
+	margin-left: 40px;
+	font-size: 18px;
+}
+#timerB {
+	margin-left: 40px;
+	height: 20px;
+	width: 38%;
+	float: right;
+	font-size: 18px;
+}
+table ,tr{
+	margin: 0 auto;
+	width:100%;
+	height: 100%;
+	font-size: 1.8rem;
+	table-layout: fixed;
+	/*padding: 20px;*/
+	border-spacing: 15px;
+}
+tr {
+	margin: 10px;
+	height: 60px;
+}
+
+
+td {
+	/*border-spacing: px;*/
+	/*border:1px solid pink;*/
+	border-radius: 50%;
+	text-align:center;
+	padding: 10px;
+	/*margin: 20px;*/
+	height: 100%;
+	background-image: url("https://image.freepik.com/free-vector/abstract-colorful-polygonal-background_38350-21.jpg");
+		background-size: contain;
+}
+
+	
+
+
+#back {
+width: 120px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: none;
+  background-color: #F5F5F5;
+  color:#6D4C41;
+	margin-left: 38%;
+	margin-top: 20px;
+}
+button {
+
+  /*width: 120px;
+  font-size: 1.6rem;
+  line-height: 2;
+  border-radius: 10px;
+  border: none;
+  color:#424242;*/
+ 
+}
+
+button:focus, button:hover {
+  background-image: linear-gradient(to bottom right, #888, #eee);
+}
+
+button:active {
+  box-shadow: inset 2px 2px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+.wrapper{
+		text-align: center;
+
+}
+.innerwrapper {
+	font-family: 'Literata', serif;
+		-webkit-animation: rotation 2.2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}

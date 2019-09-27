@@ -1,6 +1,6 @@
 ## FINDING NUMBERS
  
-This is my first project. I want to make something simple yet intriguing. This game is model after a childhood game that I used to play with paper and pen. 
+My first project, I want to make something simple yet intriguing. This game is model after a childhood game that I used to play with paper and pen. 
 
 The rule is simple. You need to click on the numbers in increasing order. Each time you click correctly, you score 1 point. The numbers from 1 to 100 are randomly distributed to the table cells.
 
@@ -15,4 +15,10 @@ What I learn from project -1:
  	Improve my skill with CSS 😊.
 
 What I can do to improve my game:
-	The  board can look better.(I'm not that much of an art person after all 🙄). I want to design the numbers trapped in bubbles that floating around and burst when clicked.
+	The  board can look better.(I'm not that much of an art person after all 🙄). I want the numbers to appear trapped in bubbles that floating around and burst when clicked.
+
+This is how my basic version looks like:
+
+# ![image] (https://imge.to/i/TtCRU)
+
+

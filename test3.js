@@ -1,4 +1,3 @@
-
 console.log("hello");
 //create random array of numbers
 var num =[];
@@ -143,5 +142,3 @@ this.currentTime = 0.0;
 
 
 	
-
-

@@ -1,4 +1,4 @@
-# GA-project-1
+## FINDING NUMBERS
  
 This is my first project. I want to make something simple yet intriguing. This game is model after a childhood game that I used to play with paper and pen. 
 

@@ -17,8 +17,5 @@ What I learn from project -1:
 What I can do to improve my game:
 	The  board can look better.(I'm not that much of an art person after all 🙄). I want the numbers to appear trapped in bubbles that floating around and burst when clicked.
 
-This is how my basic version looks like:
-
-# ![image] (https://imge.to/i/TtCRU)
 
 
